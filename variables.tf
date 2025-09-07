@@ -1,6 +1,6 @@
 variable "cidr_block" {
-    description = "CIDR block for the VPC"
-    type        = string
-    default     = "15.0.0.0/16"
-  
+  description = "CIDR block for the VPC"
+  type        = string
+  default     = "15.0.0.0/16"
+
 }

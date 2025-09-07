@@ -13,7 +13,7 @@ resource "aws_lb_target_group" "alb_target_group" {
 
   health_check {
     path = "/"
-    port = "traffic-port"   
+    port = "traffic-port"
   }
 }
 

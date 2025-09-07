@@ -3,11 +3,11 @@
 apt update
 apt install -y apache2
 
-# Get the instance ID using the instance metadata
-INSTANCE_ID=$(curl -s http://169.254.169.254/latest/meta-data/instance-id)
+# # Get the instance ID using the instance metadata
+# INSTANCE_ID=$(curl -s http://169.254.169.254/latest/meta-data/instance-id)
 
-# Install the AWS CLI
-apt install -y awscli
+# # Install the AWS CLI
+# apt install -y awscli
 
 # Download the images from S3 bucket
 #aws s3 cp s3://myterraformprojectbucket2023/project.webp /var/www/html/project.png --acl public-read
@@ -31,8 +31,8 @@ cat <<EOF > /var/www/html/index.html
   </style>
 </head>
 <body>
-  <h1>Terraform Project Server 1</h1>
-  <h2>Instance ID: <span style="color:green">$INSTANCE_ID</span></h2>
+  <h1>Terraform Project Server 2</h1>
+  <h2>Instance ID: <span style="color:green">static</span></h2>
 
   
 </body>
