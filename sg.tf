@@ -37,7 +37,7 @@ resource "aws_security_group" "sg_ec2" {
     security_groups = [aws_security_group.sg_alb.id]
   }
 
-    ingress {
+  ingress {
     description = "SSH"
     from_port   = 22
     to_port     = 22
